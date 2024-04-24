@@ -1,0 +1,14 @@
+while True:
+  matricula = int(input('Informe a matricula: '))
+  if matricula == 99: break
+  fixo = float(input('Informe o salário fixo: '))
+  vendas = float(input('Informe o total de vendas: '))
+  if vendas <= 1000:
+   final = fixo + vendas*0.03
+  else:
+    final = fixo + 1000 *0.03 + (vendas -1000) * 0.05
+  print(matricula)
+  print(vendas)
+  print(fixo)
+  print(final)
+  
